@@ -1,0 +1,262 @@
+.App {
+  min-height: 100vh;
+  margin: 50px 100px;
+  color: rgb(51, 48, 48);
+}
+
+.App-header {
+  text-align: center;
+}
+.header {
+  font-size: 5rem;
+}
+
+.icon-whisk,
+.icon-spoon {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 9px;
+}
+.icon-spoon {
+  margin-right: 10px;
+  bottom: 5px;
+}
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.top-nav-subscribe {
+  text-decoration: none;
+  box-shadow: 0 0.0625rem 0.1875rem 0 rgba(28, 92, 104, 0.1),
+    0 0.0625rem 0.125rem 0 rgba(28, 92, 104, 0.06);
+  color: #1c5c68;
+  background: #c6e9f0;
+  margin: 0 0 0 auto;
+  width: auto;
+  overflow: visible;
+  padding: 0.6rem 1.5rem;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ********** CategoryList.js && Meallist.js ********** */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: -1px 2px 34px -13px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  border: none;
+  height: 500px;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.card:hover {
+  box-shadow: rgb(198, 208, 235) 0px 30px 60px;
+  transform: translateY(-5px);
+}
+
+.category-card-text,
+.meal-card-text {
+  font-size: 16px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.card-content {
+  padding: 3rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-button,
+.meal-button {
+  border: 1px solid transparent;
+  background: transparent;
+  background: linear-gradient(to right, #eb3349 0%, #f45c43 51%, #eb3349 100%);
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.375rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: auto auto 10px auto;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+.card-link {
+  text-align: center;
+}
+
+.card-button:hover,
+.card-button:focus,
+.meal-button:hover,
+.meal-button:focus {
+  background: #ffcdaf;
+  color: #eb3349;
+}
+
+.category-title,
+.meallist-title {
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1rem 0.2rem 0.2rem 0.2rem;
+  font-weight: 700;
+  text-align: center;
+  flex-grow: 1;
+}
+.meallist-card {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meallist-button {
+  margin-bottom: 40px;
+}
+.meallist-wrapper {
+  background-color: #fff0e7;
+  padding: 2rem 10rem 15rem 10rem;
+}
+
+.meallist-title {
+  font-size: 1rem;
+  padding: 2rem 1rem 0 1rem;
+}
+
+.meallist-image {
+  height: 300px;
+}
+
+/* **************  Meal.js  *********** */
+
+.meal-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.meal-image {
+  height: 500px;
+  margin: 50px 0 10px 0;
+  border-radius: 7px;
+  width: 70%;
+}
+.meal-subtitle {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+.meal-button {
+  margin: 40px 0 50px 0;
+}
+.meal-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: #000;
+}
+.meal-card-text {
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  padding: 20px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.7rem;
+}
+
+.icon-cookbook,
+.icon-measuringcup {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.meal-ingredients {
+  border-radius: 0.375rem;
+  margin: 20px 0;
+  padding: 20px 0;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+
+.meal-measurement {
+  padding: 5px 5px 5px 50px;
+}
+.meal-ingredient-measurement::before {
+  color: #278090;
+  top: 1.5rem;
+  left: -1rem;
+  content: "\2022";
+  width: 1.25rem;
+  margin-top: -1.25rem;
+  position: relative;
+  display: block;
+}
+.meal-ingredient-measurement {
+  padding-right: 5px;
+}
+
+.meal-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* ************* MEDIA QUERIES ************* */
+
+@media screen and (max-width: 700px) {
+  .header {
+    font-size: 3rem;
+  }
+  .category-image {
+    width: 90%;
+  }
+  .card-content {
+    padding: rem;
+  }
+  .meal-container {
+    width: 80%;
+  }
+  .meal-image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .App {
+    margin: 30px 50px;
+  }
+
+  .top-nav-subscribe {
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+  .meallist-wrapper {
+    padding: 1rem 4rem 7rem 4rem;
+  }
+  .meallist-image {
+    height: 330px;
+  }
+  .meal-container {
+    width: 90%;
+  }
+}
